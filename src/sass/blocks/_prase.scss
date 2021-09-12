@@ -1,0 +1,37 @@
+.prase{
+padding-top: 60px;
+&__wrapper{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,366px);
+    grid-template-rows: repeat(2,44px);
+    row-gap: 15px;
+    column-gap: 306px;
+    margin: 0 50px 0 50px;
+}
+    &__item{
+    display: grid;
+    grid-template-rows: 21px 18px;
+    margin-left: 25px;
+    &_box{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:before{
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #FFA501;
+            border-radius: 100%;
+            left: -25px;
+            top: 2px;
+            right: 10px;
+        }
+    }
+    &_subtitle{
+        font-size: 11px;
+    }
+}
+}
